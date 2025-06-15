@@ -11,13 +11,13 @@
         <meta name="description" content="Portfolio of Shyam Hirpara - Web Developer, Full Stack Developer">
         <meta name="keywords" content="Shyam Hirpara, web developer, portfolio, full stack, projects">
         <meta name="author" content="Shyam Hirpara">
-</head>
+    </head>
     <body>
         <!-- navbar -->
         <div class="navbardiv">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
                 <div class="container-fluid px-3">
-                    <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+                    <a class="navbar-brand fw-bold logo" href="#">Portfolio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
@@ -27,19 +27,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto"> <!-- nav items right after brand -->
                         <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#" aria-current="Hero Section">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#skills" aria-current="Skills Section">Skills</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects" aria-current="Projects Section">Projects</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about" aria-current="About Section">About</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact" aria-current="Contact Section">Contact</a>
                         </li>
                     </ul>
                     </div>
@@ -55,7 +55,7 @@
                 <div class="container">
                     <h1 class="display-4 fw-bold m-5">Shyam Hirpara</h1>
                     <p class="lead mb-4">
-                        <span id="typed-text"></span><span class="cursor">|</span>
+                        <span id="typed-text"></span><span class="cursor"></span>
                     </p>
                 </div>
                 </header>
@@ -86,18 +86,18 @@
             <!-- Technical Skills -->
             <div class="tab-pane fade show active" id="tech" role="tabpanel">
                 <div class="row">
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> HTML</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> CSS</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> JavaScript</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Bootstrap</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Git & GitHub</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Java</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> C</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Python</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Responsive Design</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Database Management System</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> Data Structure</div>
-                <div class="col-md-4 mb-3"><i class="bi bi-code-slash"></i> React</div>
+                <div class="col-md-4 mb-3">HTML</div>
+                <div class="col-md-4 mb-3">CSS</div>
+                <div class="col-md-4 mb-3">JavaScript</div>
+                <div class="col-md-4 mb-3">Java</div>
+                <div class="col-md-4 mb-3">C</div>
+                <div class="col-md-4 mb-3">Python</div>
+                <div class="col-md-4 mb-3">Database Management System</div>
+                <div class="col-md-4 mb-3">Data Structure</div>
+                <div class="col-md-4 mb-3">React</div>
+                <div class="col-md-4 mb-3">Flutter</div>
+                <div class="col-md-4 mb-3">Git & GitHub</div>
+                <div class="col-md-4 mb-3">Responsive Design</div>
                 </div>
             </div>
 
@@ -134,6 +134,7 @@
                     <span class="badge bg-success">ASP .NET Core Web API</span>
                     <span class="badge bg-warning text-dark">JWT for API Auth</span>
                     </p>
+                    <hr/>
                     <p class="card-text">
                     FoodKart is an online Food Ordering and Restaurant Management Website. In this clients can order food items from any restaurants. Restaurants can handle orders and view statistics about the sales, profit and orders.
                     </p>
@@ -151,6 +152,7 @@
                     <span class="badge bg-success">CSS</span>
                     <span class="badge bg-warning text-dark">JavaScript</span>
                     </p>
+                    <hr/>
                     <p class="card-text">
                     A personal portfolio website to showcase my projects, skills, and contact information. Fully responsive and built using only frontend technologies.
                     </p>
@@ -168,6 +170,7 @@
                     <span class="badge bg-success">NodeJS</span>
                     <span class="badge bg-warning text-dark">Socket.io</span>
                     </p>
+                    <hr/>
                     <p class="card-text">
                     This is an online chat application where users can chat with anyone and view the online friends can view all the photos and media shared by any friend. This is developed using MERN Stack technologies and Socket.io for handling chat messages.
                     </p>
@@ -202,6 +205,9 @@
             <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow">
                 <div class="card-body">
+                    <div class="mb-3 text-primary">
+                        <i class="bi bi-mortarboard-fill fs-2"></i>
+                    </div>
                     <h5 class="card-title">Bachelor of Technology in Computer Science</h5>
                     <h5 class="card-subtitle mb-2 text-muted">GPA: 9.36/10</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Darshan University, 2022 – 2026</h6>
@@ -214,14 +220,31 @@
             <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow">
                 <div class="card-body">
-                    <h5 class="card-title">Higher Secondary Education</h5>
-                    <h5 class="card-subtitle mb-2 text-muted">Percentage: 66.32%</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Shree K. G. Dholakiya School, 2020 – 2022</h6>
+                    <div class="mb-3 text-primary">
+                        <i class="bi bi-book-fill fs-2"></i>
+                    </div>
+                    <h5 class="card-title">HSC</h5>
+                    <h5 class="card-subtitle mb-2 text-muted">Percentage: 66.32% (72.13 PR)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shree K. G. Dholakiya School, 2021 – 2022</h6>
                     <p class="card-text">Completed with distinction in PCM stream, developing an early interest in coding and software development. </p>
                 </div>
                 </div>
             </div>
 
+            <!-- Degree 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow">
+                <div class="card-body">
+                    <div class="mb-3 text-primary">
+                        <i class="bi bi-journal-check fs-2"></i>
+                    </div>
+                    <h5 class="card-title">SSC</h5>
+                    <h5 class="card-subtitle mb-2 text-muted">Percentage: 86.5% (99.07 PR)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shree K. G. Dholakiya School, 2019 – 2020</h6>
+                    <p class="card-text">Completed with distinction in Science. </p>
+                </div>
+                </div>
+            </div>
             </div>
         </div>
         </section>
@@ -229,30 +252,52 @@
         <hr/>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-5" style="background: #f8f9fa;"> <!-- light gray bg -->
-        <div class="container py-4 d-flex flex-column align-items-center justify-content-center" style="min-height: 350px; text-align: center;">
-            <h2 class="mb-5">Get In Touch</h2>
+        <section id="contact" class="py-5">
+            <div class="container py-4">
+                <h2 class="text-center mb-5">Get In Touch</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                    <!-- Phone -->
+                    <div class="col fade-in">
+                        <div class="contact-card p-4 shadow-sm rounded bg-white text-center h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <a href="tel:+919313526977" class="contact-link d-block">+91 9313526977</a>
+                        </div>
+                    </div>
 
-            <ul class="list-unstyled contact-list">
-            <li class="mb-4 fade-in">
-                <i class="bi bi-telephone-fill me-2"></i>
-                <a href="tel:+919313526977" class="text-decoration-none">+91 9313526977</a>
-            </li>
-            <li class="mb-4 fade-in delay-1">
-                <i class="bi bi-envelope-fill me-2"></i>
-                <a href="mailto:hirparashyam6@gmail.com" class="text-decoration-none">hirparashyam6@gmail.com</a>
-            </li>
-            <li class="mb-4 fade-in delay-2">
-                <i class="bi bi-linkedin me-2"></i>
-                <a href="https://www.linkedin.com/in/shyam-hirpara-79bb7a269" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Shyam Hirpara</a>
-            </li>
-            <li class="mb-4 fade-in delay-3">
-                <i class="bi bi-github me-2"></i>
-                <a href="https://github.com/hirpara-shyam" target="_blank" rel="noopener noreferrer" class="text-decoration-none">hirpara-shyam</a>
-            </li>
-            </ul>
-        </div>
-        </section>
+                    <!-- Email -->
+                    <div class="col fade-in delay-1">
+                        <div class="contact-card p-4 shadow-sm rounded bg-white text-center h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <a href="mailto:hirparashyam6@gmail.com" class="contact-link d-block">hirparashyam6@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="col fade-in delay-2">
+                        <div class="contact-card p-4 shadow-sm rounded bg-white text-center h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <a href="https://www.linkedin.com/in/shyam-hirpara-79bb7a269" target="_blank" class="contact-link d-block">Shyam Hirpara</a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="col fade-in delay-3">
+                        <div class="contact-card p-4 shadow-sm rounded bg-white text-center h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <a href="https://github.com/hirpara-shyam" target="_blank" class="contact-link d-block">hirpara-shyam</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            </section>
 
         <hr/>
 

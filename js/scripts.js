@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const phrases = [
+    "Software Developer",
     "Web Developer",
     "Full Stack Developer",
     "Quick Learner",
@@ -39,26 +40,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+window.addEventListener('scroll', () => {
+  let scrollPos = window.scrollY || window.pageYOffset;
+
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-    });
-  });
+    const section = document.querySelector(link.getAttribute('href'));
+    if (section) {
+      const top = section.offsetTop - 85; // navbar height offset
+      const bottom = top + section.offsetHeight;
 
-  window.addEventListener('scroll', () => {
-    let scrollPos = window.scrollY || window.pageYOffset;
-
-    navLinks.forEach(link => {
-      const section = document.querySelector(link.getAttribute('href'));
-      if (section) {
-        const top = section.offsetTop - 85; // navbar height offset
-        const bottom = top + section.offsetHeight;
-
-        if (scrollPos >= top && scrollPos < bottom) {
-          navLinks.forEach(l => l.classList.remove('active'));
-          link.classList.add('active');
-        }
+      if (scrollPos >= top && scrollPos < bottom) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
       }
-    });
+    }
   });
+});
+
+const navLinks2 = document.querySelectorAll('.nav-link');
+const navToggle = document.querySelector('.navbar-toggler'); // or your menu button
+const navbarCollapse = document.querySelector('.navbar-collapse'); // or your mobile menu div
+
+navLinks2.forEach(link => {
+  link.addEventListener('click', () => {
+    if (navbarCollapse.classList.contains('show')) {
+      navToggle.click(); // simulate a click to close menu
+    }
+  });
+});
